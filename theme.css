@@ -1,0 +1,120 @@
+/* für variablen, die auch von child-elements benutzt werden können */
+:root {
+	
+}
+
+body {
+	/* interface */
+	--font-interface: "Lincoln/MITRE L/M 5x7";
+	--tab-font-size: 15px;
+	--tab-radius: 4px;
+	--tab-radius-active: 4px;
+
+	--divider-width: 0px;
+
+	--radius-s: 0px;
+	--radius-m: 0px;
+	--radius-l: 0px;
+	--input-radius: 0px;
+	--tab-radius-active: 0px;
+	--checkbox-radius: 0px;
+	--toggle-radius: 0px;
+	--toggle-thumb-radius: 0px;
+	--slider-thumb-radius: 0px;
+	--font-text-theme: monospace;
+
+	--hr-thickness: 1px;
+
+
+	--inline-title-size: 1.5em;
+	--inline-title-weight: 400;
+
+	--h1-size: 1.3em;
+	--h1-weight: 400;
+	--h1-font: "Lincoln/MITRE L/M 7x9";
+	/* --h1-style: "L/M Stencil,Regular"; */
+
+	--h2-size: 1.3em;
+	--h2-weight: 400;
+	--h2-font: "Lincoln/MITRE L/M 7x9";
+
+
+	--font-text: 'AUTHENTIC Sans 90';
+
+
+
+	/* code */
+	--code-size: .9em;
+	--code-radius: 4px;
+}
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+.theme-dark {
+	--tab-text-color: #ffffff;
+	--tab-divider-color: #1c1c1c;
+	--divider-color: #1c1c1c;
+	--tab-background-active: #000000;
+	--tab-text-color-active: #ffffff;
+	--tab-container-background: #000000;
+	--tab-switcher-menubar-background: #000000;
+
+ 	--background-primary: #000000;
+  	--background-secondary: #1c1c1c;
+	--code-normal: #ffffff;
+	--code-background: #000000;
+	--code-border-color: #ffffff;
+	--hr-color: #ffffff;
+	--code-border-width: 1px;
+	--titlebar-background: #1c1c1c;
+	--titlebar-background-focused: #1c1c1c;
+
+
+}
+
+.theme-light {
+	--text-accent: #ff53eb;
+	--color-base-70: white;
+	--divider-color: #f6f6f6;
+	--tab-text-color: #000000;
+	--tab-divider-color: #ff53eb;
+	--divider-color: #636bc7;
+	--tab-background-active: #f6f6f6;
+	--tab-text-color-active: #000000;
+	--tab-container-background: #000000;
+	--tab-switcher-menubar-background: #ff53eb;
+	--text-normal: #0013e9;
+
+  	--background-primary: #f6f6f6;
+  	--background-secondary: #636bc7;
+  	--code-normal: #000000;
+	--code-background: #f6f6f6;
+	--code-border-color: #000000;
+	--hr-color: #000000;
+	--code-border-width: 1.2px;
+
+	--titlebar-background: #ff53eb;
+	--titlebar-background-focused: #ff53eb;
+
+}
